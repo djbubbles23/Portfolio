@@ -1,0 +1,34 @@
+.bg{
+    background-image: url("images/BackgroundGridBlack.png");
+    background-size: 200px 200px;
+    background-position: center;
+    background-repeat: repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.vignette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 25px 25px 100px 100px rgba(0,0,0,.9) inset;
+  }
+
+  .crete-round-regular {
+    font-family: "Crete Round", serif;
+    font-weight: 1000;
+    font-style: normal;
+  }
+  
+  .crete-round-regular-italic {
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  h1{
+    color:white;
+  }
+  
