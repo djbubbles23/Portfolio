@@ -7,13 +7,13 @@
     right: 0;
     position:absolute;
     background: linear-gradient(
-        124deg, 
+        150deg, 
         #867F72, 
         #2E2727, 
         #000000 
     );
     background-size: 1800% 1800%;
-    animation: rainbow 14s ease infinite;
+    animation: rainbow 18s ease infinite;
 }
 
 @keyframes rainbow {
@@ -28,17 +28,13 @@
     font-weight: 500;
 }
 
-.a:hover{
-    color: white;
-}
-
 .center-title{
     color: white;
     font-size: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 15vh;
     margin: 0; 
     overflow: hidden;
 }
@@ -90,4 +86,31 @@
     100% {
         transform: translateX(15%);
     }
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    min-height: 35vh;   
+    background-color: transparent;   
+}
+
+
+.carousel{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.carousel img{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    object-fit: contain;
 }
