@@ -100,23 +100,26 @@
 
 /* Style for the carousel itself */
 .carousel {
+    background-color: rgb(0,0,0,.05);
     display: flex; /* Ensures the carousel is a flex container */
     justify-content: center; /* Centers the carousel horizontally */
     align-items: center; /* Centers the carousel vertically */
-    width: auto; /* Set the desired width */
-    margin-top: 100px;
-
+    margin:auto;
+    margin-top: 75px;
+    width: 55%;
+    height: 50%;
 }
 
-.carousel-inner {
-    display: flex;
-    justify-content: center;
+.carousel:hover{
+    background-color: rgb(0,0,0,.15);
 }
 
 /* Force image into a specific size */
-.carousel img {
+.carousel-item img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    object-fit: scale-down; /* Ensures the image fills the area while maintaining aspect ratio */
     width: 300px; /* Set the desired width */
     height: 300px; /* Set the desired height */
-    object-fit: scale-down; /* Ensures the image fills the area while maintaining aspect ratio */
-    display: block; /* Removes inline spacing issues */
 }
