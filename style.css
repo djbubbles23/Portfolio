@@ -1,10 +1,7 @@
 .wrapper{
-    height: 100%;
+    height: auto;
+    min-height: 100vh;
     width: 100%;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
     position:absolute;
     background: linear-gradient(
         150deg, 
@@ -21,6 +18,8 @@
     50%{background-position:100% 19%}
     100%{background-position:0% 82%}
 }
+
+
 
 .navText{
     color: white;
@@ -107,7 +106,7 @@
     margin:auto;
     margin-top: 75px;
     width: 55%;
-    height: 50%;
+    height: 500px;
 }
 
 .carousel:hover{
@@ -122,4 +121,98 @@
     object-fit: scale-down; /* Ensures the image fills the area while maintaining aspect ratio */
     width: 300px; /* Set the desired width */
     height: 300px; /* Set the desired height */
+}
+
+.col{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    padding: 50px;
+}
+
+.fade-up-container {
+    text-align: center; /* Center the text */
+    padding: 50px; 
+    margin-bottom: 50px; 
+  }
+  
+  .fade-up-text {
+    opacity: 0; /* Initially invisible */
+    transform: translateY(30px); /* Start the text lower */
+    animation: fadeUp 1.75s ease-out forwards; /* Apply the fade-up animation */
+  }
+  
+  /* Animation to fade and move up */
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px); /* Starts lower */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Ends at normal position */
+    }
+  }
+
+  .fade-left-container {
+    text-align: center; /* Center the text */
+    padding: 50px;
+  }
+  
+  .fade-left {
+    opacity: 0; /* Start off invisible */
+    transform: translateX(-100%); /* Start off-screen to the left */
+    animation: fadeLeft 2s ease-out forwards; /* Apply the fade-left animation */
+  }
+  
+  /* Animation to fade in and move from left to right */
+  @keyframes fadeLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%); /* Start off the screen to the left */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* End at the normal position */
+    }
+  }
+
+  .fade-right-container {
+    text-align: center; /* Center the text */
+    padding: 50px;
+  }
+  
+  .fade-right {
+    opacity: 0; /* Start off invisible */
+    transform: translateX(100%); /* Start off-screen to the right */
+    animation: fadeRight 2s ease-out forwards; /* Apply the fade-right animation */
+  }
+  
+  /* Animation to fade in and move from right to left */
+  @keyframes fadeRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%); /* Start off the screen to the right */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* End at the normal position */
+    }
+  }
+
+.card-img-top {
+  width: 100%; /* Makes the image fill the width of the card */
+  height: 200px; /* Sets a fixed height */
+  object-fit: contain; /* Ensures the image covers the space without stretching */
+}
+
+
+.centered-box {
+  width: 50%; 
+  height: 100vh;
+  background-color: white; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
