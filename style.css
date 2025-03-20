@@ -301,9 +301,9 @@
 }
 
 .shrink-on-hover {
-  transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 .shrink-on-hover:hover {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
