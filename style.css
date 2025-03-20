@@ -212,14 +212,14 @@
 
 .square {
   position: relative;
+  flex-direction: column;
   width: 50%; /* Set the width of the square */
   min-height: 100vh;
   height: max-content; /* Set the height equal to the width */
-  background-color: white; /* Set the background color */
-  margin: auto; /* Center horizontally if inside a block container */
+  margin-right: auto; /* Center horizontally if inside a block container */
+  margin-left: auto; /* Center horizontally if inside a block container */
   display: flex; /* Optional: Use flexbox for content alignment */
-  justify-content: center; /* Optional: Center content horizontally */
-  align-items: center; /* Optional: Center content vertically */
+
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
   background-color: rgb(0,0,0,.05);
 }
@@ -228,21 +228,61 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.box-parm{
+  padding: 50px;
+}
+
 .title{
-  position: absolute;
-  left: 40px;
-  top: 20px; /* Distance from the top */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   font-size: 75px;
   color: white;
-  z-index: 10; /* Ensures it appears above other elements */
+  margin: 5px;
 }
 
 .paragraph{
-  position: absolute;
-  top: 150px;
-  left: 40px;
-  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  font-size: 15px;
   color: white;
-  z-index: 10; /* Ensures it appears above other elements */
+  margin: 5px;
+  margin-bottom: 50px;
+  padding: 10px;
 }
 
+.img-size{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.carousel-text-title{
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  transform: translateY(150%);
+  z-index: 10;
+}
+
+.ct{
+  color: white;
+  transform: translateY(160%);
+  z-index: 10;
+}
+
+.carousel-caption-container{
+  background-color: rgb(0,0,0,.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
