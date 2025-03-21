@@ -34,9 +34,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15vh;
+    height: 100%;
     margin: 0; 
-    overflow: hidden;
+    overflow: visible;
+    margin-bottom: 50px;
 }
 
 @font-face {
@@ -134,9 +135,7 @@
 }
 
 .fade-up-container {
-    text-align: center; /* Center the text */
-    padding: 50px; 
-    margin-bottom: 50px; 
+    justify-content: center;
   }
   
   .fade-up-text {
