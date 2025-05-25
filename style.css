@@ -316,22 +316,23 @@
   overflow: hidden;
 }
 
-.wave-top {
+.wave-left {
   position:absolute;
-  top: 100%;
-  right: -150px;
-  width: 200vw;
+  top: 0;
+  right: -20rem;
+  width: 3164px;
   height: 657px;
   background-image: url('images/WaveGrey.svg');
   background-repeat: repeat-x;
-  animation: waveMoveTop 30s linear infinite;
+  background-size: contain;
+  animation: waveMoveLeft 30s linear infinite;
   z-index: -1;
   overflow: hidden;
   transform-origin: center;
   transform: rotate(90deg);
 }
 
-@keyframes waveMoveTop {
+@keyframes waveMoveLeft {
   0% {
     background-position-x: 0;
   }
@@ -340,22 +341,23 @@
   }
 }
 
-.wave-bottom {
-  position:absolute;
-  top: 100%;
-  left: -150px;
-  width: 200vw;
+.wave-right {
+  position: absolute;
+  top: 0;
+  left: -20rem;
+  width: 3164px;
   height: 657px;
   background-image: url('images/WaveBlack.svg');
   background-repeat: repeat-x;
-  animation: waveMoveBottom 30s linear infinite;
+  background-size: contain;
+  animation: waveMoveRight 30s linear infinite;
   z-index: -1;
   overflow: hidden;
   transform-origin: center;
   transform: rotate(-90deg);
 }
 
-@keyframes waveMoveBottom {
+@keyframes waveMoveRight {
   0% {
     background-position-x: 0;
   }
