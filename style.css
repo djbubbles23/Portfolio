@@ -313,56 +313,31 @@
 
 .wave-background{
   background-color: #1b1b1c;
-  overflow: hidden;
+
 }
 
-.wave-left {
-  position:absolute;
+.wave {
+  position: fixed;
   top: 0;
-  right: -20rem;
-  width: 3164px;
-  height: 657px;
-  background-image: url('images/WaveGrey.svg');
-  background-repeat: repeat-x;
-  background-size: contain;
-  animation: waveMoveLeft 30s linear infinite;
-  z-index: -1;
-  overflow: hidden;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/Wave6.png'); 
+  background-repeat: repeat-y;
   transform-origin: center;
-  transform: rotate(90deg);
+  background-size: cover;
+  background-position: left top;
+  z-index: -1; 
+  animation: wave-animation 20s linear infinite;
+  transform: rotate(0) scale(1.2); 
+
 }
 
-@keyframes waveMoveLeft {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: -3164px;
-  }
+@keyframes wave-animation {
+    0% {
+        background-position-y: 0;
+    }
+    100% {
+        background-position-y: 2000px;
+    }
 }
-
-.wave-right {
-  position: absolute;
-  top: 0;
-  left: -20rem;
-  width: 3164px;
-  height: 657px;
-  background-image: url('images/WaveBlack.svg');
-  background-repeat: repeat-x;
-  background-size: contain;
-  animation: waveMoveRight 30s linear infinite;
-  z-index: -1;
-  overflow: hidden;
-  transform-origin: center;
-  transform: rotate(-90deg);
-}
-
-@keyframes waveMoveRight {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 3164px;
-  }
-}
-
