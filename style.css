@@ -309,17 +309,61 @@
     transform: scale(0.95);
 }
 
-.wave {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    rotate: -45deg;
-    z-index: -1;
-    overflow: hidden;
-    background:
-    radial-gradient(67.08px at 50% 90px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
-    radial-gradient(67.08px at 50% -60px,#0000 99%,#000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
-    radial-gradient(67.08px at 50% calc(100% - 90px),#000 99%,#0000 101%) 50% 100%/120px 51% repeat-x,
-    radial-gradient(67.08px at 50% calc(100% + 60px),#0000 99%,#000 101%) calc(50% - 60px) calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
+.wave-background{
+  background-color: #1b1b1c;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wave-top {
+  position:absolute;
+  top: 0;
+  right: -150px;
+  width: 3164px;
+  height: 657px;
+  background-image: url('images/WaveGrey.svg');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  animation: waveMoveTop 15s linear infinite;
+  z-index: -1;
+  overflow: visible;
+  transform-origin: center;
+  transform: rotate(120deg);
+}
+
+@keyframes waveMoveTop {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -3164px;
+  }
+}
+
+.wave-bottom {
+  position:absolute;
+  top: 0;
+  left: -150px;
+  width: 3164px;
+  height: 657px;
+  background-image: url('images/WaveBlack.svg');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  animation: waveMoveBottom 15s linear infinite;
+  z-index: -1;
+  overflow: visible;
+  transform-origin: center;
+  transform: rotate(300deg);
+}
+
+@keyframes waveMoveBottom {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 3164px;
+  }
 }
 
