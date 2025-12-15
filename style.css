@@ -39,7 +39,7 @@
     align-items: center;
     height: 100%;
     margin: 0; 
-    overflow: hidden;
+    overflow: visible;
 }
 
 @font-face {
@@ -51,7 +51,7 @@
     display: flex;
     font-weight: bold;
     text-transform: uppercase;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .text-part {
